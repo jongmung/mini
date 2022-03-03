@@ -1,8 +1,28 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+header {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
-
+body {
+    padding-top: 70px;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+}
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 a {
     text-decoration: none;
     color:aliceblue
@@ -29,6 +49,7 @@ a {
     list-style: none;
     padding-left: 0;
     font-size: 20px;
+    margin:10px 0px 10px;
 }
 
 .navbar_menu li {
@@ -66,7 +87,143 @@ a {
     border-radius: 4px;
     padding: 2px;
 }
+.home {
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+    font-size: 20px;
+    color: rgb(155, 216, 138);
+    height: 100%;
+	filter: drop-shadow(0px 5px 3px rgb(183, 207, 177));
+	animation: drop 1.0s ease;
+}
+
+/* .slideitem {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.3s ease;
+} */
+
+[name="slide"] {display: none;}
+.slidebox {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.slidebox img {
+    max-width: 100%;
+}
+.slidebox .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+}
+.slidebox .slideitem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .35s;
+}
+.slidebox .slideitem label {
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+label.left {
+    left:5px;
+    background-image: url('./img/leftarrow.png');
+    background-position: center center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+}
+label.right {
+    right:5px;
+    background-image: url('./img/rightarrow.png');
+    background-position: center center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+}
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 10s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 10s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 10s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 10s infinite;}
+
+.box {
+    margin-top: 15%;
+    background-color: rgb(220, 236, 213);
+}
+.name {
+    text-align: center;
+    margin-top: 20%;
+}
+
+@keyframes slide01 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:-300%;}
+    98% {left:-300%;}
+    100% {left:0%;}
+}
+@keyframes slide02 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide03 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:300%;}
+    48% {left:300%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
 @media screen and (max-width: 768px) {
+    .home {
+        margin: 15px auto 35px;
+        padding: 40px;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;

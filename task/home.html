@@ -6,37 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link 
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/71a0306758.js" crossorigin="anonymous"></script>
     <title>Jongmoong</title>
     <script src="main.js" defer></script>
 </head>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_logo">
+                <i class="fa-solid fa-paw"></i>
+                <a href="#">Jongmoong</a>
+            </div>
+
+            <ul class="navbar_menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">More</a></li>
+                <li><a href="https://www.notion.so/Jongmoong-6bdb407513a94d28a8ca616066af8400">Moong</a></li>
+            </ul>
+
+            <ul class="navbar_icons">
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook-square"></i></li>
+            </ul>
+
+            <a href="#" class="navbar_toogleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
 <body>
-    <nav class="navbar">
-        <div class="navbar_logo">
-            <i class="fa-solid fa-paw"></i>
-            <a href="#">Jongmoong</a>
+    <main>
+        <section class="presentation">
+            <div class="home">
+                <h1>Home</h1>
+            </div>
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide04" class="left"></label>
+                            <label for="slide02" class="right"></label>
+                            <a><img src="img/y1.jpg"></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide01" class="left"></label>
+                            <label for="slide03" class="right"></label>
+                            <a><img src="img/y6.jpg"></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide02" class="left"></label>
+                            <label for="slide04" class="right"></label>
+                            <a><img src="img/y11.jpg"></a>
+                        </div>
+                    </li>
+                    <li class="slideitem">
+                        <div>
+                            <label for="slide03" class="left"></label>
+                            <label for="slide01" class="right"></label>
+                            <a><img src="img/y15.jpg"></a>
+                        </div>
+                    </li>
+                </ul>              
+            </div>
+        </section>
+    </main>
+    <main02>
+        <div class="box">
+            <div class="home">
+                <h1>About</h1>        
+            </div>
+            <div class="name">
+                <h2>Mini</h2>
+            </div>
         </div>
-
-        <ul class="navbar_menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">More</a></li>
-            <li><a href="https://www.notion.so/Jongmoong-6bdb407513a94d28a8ca616066af8400">Moong</a></li>
-        </ul>
-
-        <ul class="navbar_icons">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-facebook-square"></i></li>
-        </ul>
-
-        <a href="#" class="navbar_toogleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-    </nav>
-    <div class="wrapper">
-           
-    </div>
+    </main02>        
 </body>
 </html>
