@@ -91,18 +91,18 @@ a {
     text-align: center;
     margin: 40px;
     padding: 40px;
-    font-size: 20px;
-    color: rgb(155, 216, 138);
+    font-size: 18px;
+    color: rgb(188, 230, 169);
     height: 100%;
-	filter: drop-shadow(0px 5px 3px rgb(183, 207, 177));
+	filter: drop-shadow(0px 5px 3px rgb(191, 214, 185));
 	animation: drop 1.0s ease;
 }
 
-/* .slideitem {
+.slidelist {
 	height: 100%;
-	filter: drop-shadow(0px 5px 3px black);
+	filter: drop-shadow(3px 5px 3px black);
 	animation: drop 1.3s ease;
-} */
+} 
 
 [name="slide"] {display: none;}
 .slidebox {
@@ -154,12 +154,50 @@ label.right {
 [id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 10s infinite;}
 
 .box {
-    margin-top: 15%;
+    margin-top: 12%;
     background-color: rgb(220, 236, 213);
 }
-.name {
+
+.About {
     text-align: center;
-    margin-top: 20%;
+    padding-top: 100px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    height: 100%;
+	filter: drop-shadow(0px 5px 3px rgb(163, 185, 158));
+	animation: drop 1.0s ease;
+}
+.presentation {
+    display: flex;
+	align-items: center;
+}
+.cover {
+	display: flex;
+    margin: 10% 15%;
+    height: 45vh;
+}
+.cover img {
+    height: 100%;
+	filter: drop-shadow(3px 5px 3px rgb(90, 119, 76));
+	animation: drop 1.3s ease;
+}
+.intro_text {
+    align-items: center;
+}
+
+.intro_text li {
+    list-style: none;
+    padding: 8px 12px;
+    margin:20px;
+    font-size: 30px;
+    filter: drop-shadow(3px 5px 3px rgb(149, 155, 144));
+}
+.intro_text li a {
+    color: rgb(244, 255, 239);
+}
+.intro_text li a:hover {
+    color: rgb(203, 241, 183);
+    cursor:default;
 }
 
 @keyframes slide01 {
