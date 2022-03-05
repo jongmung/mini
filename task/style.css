@@ -87,6 +87,7 @@ a {
     top:10px;
     right: 32px;
     font-size: 24px;
+    color: rgb(239, 247, 167);
 }
 
 .navbar_toogleBtn:hover {
@@ -224,87 +225,30 @@ label.right {
 .contain {
     background-color: rgb(247, 253, 194);
     margin: 50px;
-    height:1000px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
-.eft {
+.eft,.eft1,.eft2,.eft3,.eft4,.eft5,.eft6,.eft7 {
     width: 400px;
     position: relative;
 }
-.mini12 {
+.mini12,.mini2,.mini8,.mini4,.mini9,.mini16,.mini1,.mini3 {
     width: 300px;
     margin: 50px;
 }
-.m1 {
+.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8 {
     position: absolute;
     margin: 50px;
     top:0px;
     left: 0px;
     display: none;
 }
-.eft:hover .m1{
-    display: block;
-}
-
-
-.eft1 {
-    width: 400px;
-    position: relative;
-}
-.mini2 {
-    width: 300px;
-    margin: 50px;
-}
-.m2 {
-    position: absolute;
-    margin: 50px;
-    top:0px;
-    left: 0px;
-    display: none;
-}
-.eft1:hover .m2{
-    display: block;
-}
-
-.eft2 {
-    width: 400px;
-    position: relative;
-}
-.mini8 {
-    width: 300px;
-    margin: 50px;
-}
-.m3 {
-    position: absolute;
-    margin: 50px;
-    top:0px;
-    left: 0px;
-    display: none;
-}
-.eft2:hover .m3{
-    display: block;
-}
-
-.eft3 {
-    width: 400px;
-    position: relative;
-}
-.mini4 {
-    width: 300px;
-    margin: 50px;
-}
-.m4 {
-    position: absolute;
-    margin: 50px;
-    top:0px;
-    left: 0px;
-    display: none;
-}
-.eft3:hover .m4{
+.eft:hover .m1,.eft1:hover .m2,.eft2:hover .m3,.eft3:hover .m4,
+.eft4:hover .m5,.eft5:hover .m6,.eft6:hover .m7,.eft7:hover .m8{
     display: block;
 }
 
@@ -404,7 +348,7 @@ label.right {
         display: flex;
     }
 
-    .box {
+     .intro_text {
         display: none;
-    }
+    } 
 }
