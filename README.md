@@ -3,6 +3,9 @@ project : mini<br>
 <실행화면> <br>
 
 ![image](https://user-images.githubusercontent.com/51312124/156916429-27c3f7a0-42a9-4b93-a9f1-f21121fae108.png)
+자동 슬라이드 및 클릭 시 슬라이드 <br>
+![image](https://user-images.githubusercontent.com/51312124/156916646-ea169ad2-1276-4934-8c83-074834605443.png)
+
 ![image](https://user-images.githubusercontent.com/51312124/156916443-21c93557-cadc-4d35-aee5-ba7f9df0f88d.png)
 ![image](https://user-images.githubusercontent.com/51312124/156916450-9cba0ffc-7f34-4845-98ad-9b44ee9f6a33.png)
 사진 위에 마우스 올릴 시
